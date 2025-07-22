@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Edit Lib</title>
+    <link rel="stylesheet" href="../src/styles/styles.css">
+</head>
+<body>
+    <h1>T-Shirt Print Editor</h1>
+    <canvas id="editor-canvas" width="600" height="600"></canvas>
+    <script type="module" src="../dist/components/PrintEditor.js"></script>
+    <script type="module">
+        import { PrintEditor } from '../dist/components/PrintEditor.js';
+
+        window.onload = () => {
+            new PrintEditor(
+                'editor-canvas',
+                't-shirt_background.png',
+                'print_editable.png'
+            );
+        };
+    </script>
+</body>
+</html> 
