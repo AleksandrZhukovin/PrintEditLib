@@ -9,7 +9,14 @@
   "author": "",
   "license": "ISC",
   "description": "",
+  "files": [
+    "dist/"
+  ],
   "devDependencies": {
+    "@rollup/plugin-typescript": "^12.1.4",
     "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "tslib": "^2.8.1"
   }
 }

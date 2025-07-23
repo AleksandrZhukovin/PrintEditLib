@@ -2,7 +2,7 @@ import { PrintObject } from './PrintObject';
 import { getHandlePositions, getHandleAtPosition } from './Handle';
 import { Point, Handle } from '../types/types';
 
-export class PrintEditor {
+export default class PrintEditor {
     private canvas: HTMLCanvasElement;
     private ctx: CanvasRenderingContext2D;
     private backgroundImage: HTMLImageElement;
